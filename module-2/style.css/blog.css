@@ -1,0 +1,51 @@
+h3{
+    font-size:20px;
+    text-decoration: overline;
+    font-family: 'Courier New', Courier, monospace;
+}
+/* .second{
+    display: none;
+    visibility: hidden;
+} */
+
+.blog{
+    margin: 20px;
+    border: 10px solid tomato;
+    box-shadow: 10px 10px 20px blueviolet;
+}
+
+.jkop{
+     border: 2px solid purple;
+     height: 60px;
+    display: block ;
+    /* display: inline-block; */
+
+}
+
+.header{
+    height: 600px;
+    /* background-image:url('grandma1.jpg') ; */
+   background-image: url('../image/child.jpg'); 
+  
+    /* background-repeat: no-repeat; */
+    /* background-repeat: repeat-x; */
+    /* background-repeat: repeat-y; */
+    /* background-size: cover; */
+    /* background-size: contain; */
+    /* background-size: 100px; */
+    
+
+}
+ 
+.dfg
+{
+    border: 2px solid peru;
+    height: 60px;
+    display: inline-block;
+
+}
+
+
+.li{
+    display:block;
+}

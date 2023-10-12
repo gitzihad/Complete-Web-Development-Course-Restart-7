@@ -1,0 +1,60 @@
+<!-- doing task 4 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task four</title>
+    <style>
+        .imga{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            margin: 20px;
+            border: 1px solid paleturquoise;
+        }
+        .imga img{
+            width: 80%;
+        }
+        .btn{
+            background-color:gold;
+            font-size: 20px;
+           padding: 10px;
+           border-radius: 5px;
+        }
+        @media screen and (max-width:576px) {
+            .imga{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            margin: 20px;
+            border: 1px solid paleturquoise;
+        }
+        .imga img{
+            width: 100%;
+        }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="images-container">
+        <div class="imga">
+            <div> <img src="images/fast1.webp" alt=""></div>
+            <div>
+                <h2>Your sandwich is ready </h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, assumenda. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi, dignissimos. Distinctio quisquam rerum aut possimus? Quas, rerum sit accusamus minima nemo necessitatibus ea cum sapiente! Laborum dignissimos deserunt aperiam ad.</p>
+                <button class="btn">BUY NOW</button>
+            </div>
+          
+        </div>
+        <div class="imga">
+            <div><img src="images/fast2.webp" alt=""></div>
+            <div>
+                <h2>Your Burger is ready </h2>
+                <p>Aliquid, veritatis culpa. Numquam at officiis officia minima harum similique. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, aliquid est repellat, eaque magnam, atque quod accusantium obcaecati ut pariatur officiis nulla! Dolorem deleniti quo natus officia impedit similique minima.</p>
+                <button class="btn">BUY NOW</button>
+            </div>
+          
+        </div>
+    </div>
+</body>
+</html>
