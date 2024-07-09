@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour of DOM</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        li{
+            color: tomato;
+        }
+        #fuits-title{
+            color: black;
+        }
+        .important-places{
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to my DOM</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita ratione numquam quaerat aliquam modi alias? Soluta odio consequatur possimus molestias quas magnam esse inventore mollitia quisquam dicta a, unde saepe!</p>
+    </header>
+    <main id="main-container"> 
+       <section>
+        <h1>My Awesome DOM de baba</h1>
+        <ul>
+            <li>jalali Set</li>
+            <li>Shafaet</li>
+            <li>bonobash</li>
+            <li>dom de de re baba</li>
+        </ul>
+       </section>
+        <section class="Fruits-container">
+            <h1 id="fuits-title">Fruits I like</h1>
+            <ul>
+                <li>Apple</li>
+                <li>Bannana</li>
+                <li>Carrot</li>
+            </ul>
+        </section>
+        <section id="places-container" class="large-text">
+            <h1>places i like to visit</h1>
+            <ul id="places-list">
+                <li class="important-places">shundarban</li>
+                <li class="important-places">bandorban</li>
+                <li class="important-places">kataban</li>
+                <li>trban</li>
+            </ul>
+        </section>
+
+    </main>
+  <script src="js/dom.js"></script>
+  <script src="js/stylein.js"></script>
+  <script src="js/append.js"></script>
+  <script>
+    // const student={
+    //     name:'abul',
+    //     ID:11,
+    //     study: function(time){
+    //         console.log(time, "study kortese");
+    //     }
+
+    // }
+    // console.log("adding js inside the file of html")
+
+    const liCollection=document.getElementsByTagName('li');
+    // console.log(liCollection)
+
+        for(const li of liCollection){
+            // console.log(li);
+        }
+
+
+        const h1Collection=document.getElementsByTagName('h1');
+
+        for (const h1 of h1Collection){
+            // console.log(h1.innerText);
+        }
+
+
+
+        const places=document.getElementsByClassName('important-places')
+        // console.log(places);
+
+        for(const place of places){
+//console.log(.innerText);
+        }
+
+  </script>
+</body>
+</html>

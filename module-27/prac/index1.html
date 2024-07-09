@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>problem number 1</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="text-center mt-8"> 
+        <h1 class="text-5xl font-medium text-green-500">Price:1000</h1>
+        <button id="one" class="text-xl font-medium  text-white bg-red-600 rounded-lg px-6 py-4 mt-8">Apply</button>
+        <h5 >Your Price: <span id="two"></span></h5>
+    </div>
+ 
+    
+
+    <script>
+        document.getElementById('one').addEventListener('click',function(){
+            const price=document.getElementById('two')
+            const cal=700
+            price.innerText=cal
+        })
+           
+        
+    </script>
+</body>
+</html>

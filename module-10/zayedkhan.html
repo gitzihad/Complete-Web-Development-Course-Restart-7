@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banglar Hero</title>
+    <style>
+        .box{
+            display: flex;
+            border: 2px solid powderblue;
+            width: 600px;
+            height: 300px;
+            /* background-color: skyblue; */
+            background-image: url(images/zayed\ khan.jpg);
+            
+            background-repeat: no-repeat;
+            
+        }
+        .red-blue{
+            display: flex;
+        
+            transition: transform 7s ease-in-out .1s;
+        }
+        .red{
+             background-color: red;
+             width: 300px;
+            height: 300px;
+        }
+        .blue{
+             background-color: blue;
+             width: 300px;
+            height: 300px;
+        }
+        .box:hover .red-blue{
+            /* transform: rotate(-300deg); */
+           /* transform: scale(10); */
+           transform: translate(500px);
+           /* position: relative;
+            top:300px ; */
+         
+         
+
+        }
+        /* .box:hover .blue{
+            transform: rotate(-120deg);
+        } */
+    </style>
+</head>
+<body>
+    <div class="box">
+        <!-- <img src="images/zayed khan.jpg" alt=""> -->
+        
+        
+         
+            <div class="red-blue">
+                <div class="red">
+                </div>
+                <div class="blue">          
+                </div>
+                </div>
+        
+        
+    </div>
+</body>
+</html>

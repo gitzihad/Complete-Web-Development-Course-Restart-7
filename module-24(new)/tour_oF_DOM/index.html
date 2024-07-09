@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tour of dom</title>
+    <link rel="stylesheet" href="style/style.css">
+    <style>
+       .fruits-container li{
+            color: tomato;
+        }
+        #fruits-title{
+            color: black;
+        }
+        .important-places{
+            color:blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>
+        welcom to my dom
+        </h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione nam delectus corporis fugiat magni et sed sapiente accusantium voluptate error asperiores nihil rem est, deleniti eius! Vitae nam expedita molestias!</p>
+    </header>
+    <main id="main-content">
+     <section>
+        <h1>my awesome dom de baba</h1>
+        <ul>
+            <li>jalali set</li>
+            <li>shafayet</li>
+            <li>bonobash</li>
+            <li>dom dere baba</li>
+        </ul>
+     </section>
+        <section class="fruits-container">
+            <h1 id="fruits-title">Fruits i like</h1>
+            <ul>
+                <li>apple</li>
+                <li>banana</li>
+                <li>orange</li>
+            </ul>
+        </section>
+        <section id="places-container" class="large-text">
+            <h1 id="places-title">Places i want to visit</h1>
+            <ul id="places-list">
+                <li class="important-places">sondarban</li>
+                <li class="important-places">bandorban</li>
+                <li class="important-places">katabon</li>
+                <li class="other-place">salbon</li>
+            </ul>
+
+        </section>
+      
+    </main>
+    
+    <script src="js/dom.js"></script>
+    <script src="js/append.js"></script>
+    <script src="js/stylein.js"></script>
+    <script>
+        // const student={
+        //     name:'abul',
+        //     id:11,
+        //     study:function(time){
+        //         console.log(time,'study kortese')
+        //     }
+        // }
+        // console.log('adding js inside html file')
+
+        const liCollection= document.getElementsByTagName('li')
+        // console.log(liCollection)
+
+
+        for(const li of liCollection){
+            // console.log(li.innerText)
+        }
+
+
+        //option 1:getElementByTagName
+        const allHeadings=document.getElementsByTagName('h1')
+        for(const p1 of allHeadings){
+            // console.log(p1.innerText)
+        }
+
+        // option 2: getElementById
+        const fruitsTitle=document.getElementById('fruits-title');
+        fruitsTitle.innerText='Fruits changed by JS';
+
+
+
+
+
+        // option 3: getElementByClassName
+        const places= document.getElementsByClassName('important-places');
+        // console.log(places);
+
+        for (const place of places){
+            // console.log(place.innerText);
+        }
+
+
+
+
+        // option 4:querySelector
+
+        // option 5:querySelectorAll
+        const someLi=document.querySelectorAll('.fruits-container li')
+        // console.log(someLi)
+
+        for(const li of someLi){
+            // console.log(li.innerText)
+        }
+
+
+    </script>
+</body>
+</html>

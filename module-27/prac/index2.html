@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>problem number 2</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="text-center mt-8"> 
+        <h1 class="text-5xl font-medium text-green-500">Price:1000</h1>
+        <input id="dis" class="mx-auto mt-4 w-1/4 px-4 py-3 rounded-s-3xl block border-slate-700"type="text" placeholder="write discount">
+        <button id="one" class="text-xl font-medium  text-white bg-red-600 rounded-lg px-6 py-4 mt-8">Apply</button>
+        <h5 class="text-5xl font-medium text-yellow-500">Your Price: <span id="two"></span></h5>
+        <!-- <h5 class="text-5xl font-medium text-yellow-500">Discount Cuppon is not correct Your Price: <span id="three"></span></h5> -->
+    </div>
+ 
+    
+
+    <script>
+        document.getElementById('one').addEventListener('click',function(){
+
+            const inputField=document.getElementById('dis')
+            const inputText=inputField.value
+            
+            if(inputText=='DISC30'){
+                const price=document.getElementById('two')
+            const cal=700
+            price.innerText=cal
+            }
+
+            else{
+                const price=document.getElementById('two')
+            const cal=1000
+            price.innerText=cal
+            alert('your discount cuppon is not correct')
+            }
+
+
+
+
+            inputField.value=''
+           
+        })
+           
+        
+    </script>
+</body>
+</html>

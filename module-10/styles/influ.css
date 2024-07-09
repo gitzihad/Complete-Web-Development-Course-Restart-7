@@ -1,0 +1,181 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* header{
+    max-width: 1400px;
+} */
+nav {
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+}
+
+nav>ul {
+    display: flex;
+}
+
+nav li {
+    list-style: none;
+    margin-left: 50px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #3A3A3A;
+}
+
+.influ {
+    display: flex;
+    margin: 0 120px;
+}
+
+.influ-first {
+    padding-right: 130px;
+
+}
+
+.title {
+    color: #3A3A3A;
+    font-size: 3.2rem;
+}
+
+.para {
+    color: #3A3A3A;
+}
+
+.influ img {
+    background-image: url(../influencer-gear/images/Circle\ design.svg);
+}
+
+.btn-pri {
+    color: #FFF;
+    border-radius: 41px;
+    background: #E02C6D;
+    padding: 10px;
+}
+
+
+/* logos */
+.logo{
+
+    margin: 100px;
+    border: 2px solid white;
+}
+
+.logo img{
+    margin-left: 70px;
+}
+
+.Popular{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 0 200px;
+
+}
+.ra{
+    display: flex;
+    /* font-size: 1rem; */
+    margin-bottom: 0px;
+}
+.ei{
+    position: relative;
+    bottom: 22px;
+}
+
+.collection-pic{
+
+    padding: 30px;
+    border-radius: 5px;
+    /* background: lightgray ;
+    gap: 10px; */
+    border-radius: 5px;
+background: #FFF;
+box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+margin-top: 10px;
+margin-left: 10px;
+}
+.collection{
+    margin: 30px;
+}
+
+.title-two{
+    text-align: center;
+}
+
+.li{
+    margin-left: 0px;
+}
+
+
+footer{
+    background: #0A0826;
+    color: #FFF;
+}
+
+.last{
+    text-align: center;
+    padding: 50px;
+}
+
+
+
+@media screen and (max-width:576px) {
+    .title-one{
+        text-align: center;
+    }
+    nav li {
+        margin-left: 20px;
+
+    }
+    .influ-first {
+        padding: 5px;
+    }
+    .influ {
+ 
+        margin: 0;
+        /* padding: 100px; */
+    }
+    nav
+     {
+        flex-direction: column;
+    }
+    .influ{
+        flex-direction: column-reverse;
+    }
+    .pic{
+        padding: 50px;
+    }
+
+    .imgp{
+        max-width: 300px;
+    }
+    .influ img {
+        background-image: url(../influencer-gear/images/Circle\ design-svg.png);
+        background-repeat: no-repeat;
+    }
+    
+    .title {
+        text-align: center;
+        font-size: 2rem;
+    }
+    .logo{
+
+        margin: 0px;
+        border: 2px solid white;
+    }
+
+    .logo img{
+        margin-left: 5px;
+        padding:10px ;
+    }
+
+    .Popular{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        padding: 0 0px;
+    }
+    .collection{
+        margin: 0px;
+    }
+}

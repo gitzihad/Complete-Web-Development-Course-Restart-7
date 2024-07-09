@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunrise</title>
+    <style>
+        /* @keyframes sunrise{
+            from{
+                left: 200px;
+                top: 0px;
+                background-color: yellow;
+            }
+            to{
+                left:200px;
+                top: 200px;
+                background-color:	#FA5F55;
+            }
+        } */
+
+        .box{
+            border: 2px solid powderblue;
+            width: 600px;
+            height: 300px;
+            background-color: skyblue;
+           
+        }
+        .ball{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+           background-color: yellow;
+           position: relative;
+           left: 200px;
+            transition: transform 10s ease-in-out 1s ;
+            /* animation: sunrise 10s ease-in-out .1s infinite alternate; */
+        }
+        .box:hover .ball{
+            transform: translate(-500px,2000px);
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="box">
+    <div class="ball"></div>
+    </div>
+</body>
+</html>
